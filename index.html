@@ -8,26 +8,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <link rel="web icon" href="./png/geo.svg">
+    <title>Outdoor</title>
 </head>
 <body>
     <header class="header container flex">
         <img src="./png/logo_dark.svg" alt="logo_dark">
         <div class="flex cont">
-            <div class="header__list">
-                <span>Shop</span>
-                <span>About us</span>
-                <span>Our team</span>
-                <span>Buyer's guides</span>
-                <span>Categories</span>
+            <div class="menu">
+                <input type="checkbox" class="checkbox">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
+                <div class="menu-all flex">
+                    <div class="flex flex_menu header_ul">
+                    <div class="header__list">
+                        <span class="button-text">Shop</span>
+                        <span class="button-text">About us</span>
+                        <span class="button-text">Our team</span>
+                        <span class="button-text">Buyer's guides</span>
+                        <span class="button-text">Categories</span>
+                    </div>
+                    </div>
+                    <button id="open-modal" class="button">
+                        Buy Template
+                    </button>
+                    <button class="button button__cart"><img src="./png/cart.svg" alt="cart" class="cart__svg"><span class="cart__button-text">Cart</span><img src="./png/count.svg" alt="frame"></button>
+                </div>
             </div>
-            <button class="button">Buy template</button>
-            <button class="button button__cart"><img src="./png/cart.svg" alt="cart" class="cart__svg"><span class="cart__button-text">Cart</span><img src="./png/count.svg" alt="frame"></button>
         </div>
     </header>
     <section class="bg1-img">
-        <div class="captions">
+        <div class="captions container">
             <h5>OUTDOOR EXPLORATION</h5>
             <h2>Gear for when it actually matters.</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h4>  
@@ -150,19 +166,19 @@
     <section class="bg2-img">
         <div class=" container sea-button">
             <button><img src="./png/cart.svg" alt="cart">
-                First Aid Kit
+                <h4 class="button-text">First Aid Kit</h4> 
             </button>
             <button>
-                Banger Bottle
+                <h4 class="button-text">Banger Bottle</h4> 
             </button>
             <button><img src="./png/camera.svg" alt="camera">
-                Brian Schultz
+                <h4 class="button-text">Brian Schultz</h4> 
             </button>
             <button><img src="./png/pfp.svg" alt="pfp">
-                Leah Stoff
+                <h4 class="button-text">Leah Stoff</h4> 
             </button>
             <button><img src="./png/geo.svg" alt="geo">
-                Catalina, California
+                <h4 class="button-text">Catalina, California</h4> 
             </button>
         </div>
     </section>
@@ -184,6 +200,78 @@
                 <h4>Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</h4>  
             </div>
             <div class="grid3">            
+                <div class="grid3_item">                        
+                    <img src="./png/grid3pic_1.png" alt="grid pic">
+                    <div class="grid3_text">
+                        <h4>3 climbing accessories for the climber that has everything</h4>
+                    </div>
+                    <div class="grid3_user">
+                        <img src="./png/user1.png" alt="">
+                        <div class="grid3_user-texts">
+                            <div class="grid3_user-text1">
+                                <h2>Alex Jenna</h2>
+                                <h4>QA</h4>
+                            </div>
+                            <div class="grid3_user-text2">
+                                <h4>October 18, 2021</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid3_item">                        
+                    <img src="./png/grid3pic_2.png" alt="grid pic">
+                    <div class="grid3_text">
+                        <h4>Biking accessories for the beaten path</h4>
+                    </div>
+                    <div class="grid3_user">
+                        <img src="./png/user2.png" alt="">
+                        <div class="grid3_user-texts">
+                            <div class="grid3_user-text1">
+                                <h2>Alex Jenna</h2>
+                                <h4>QA</h4>
+                            </div>
+                            <div class="grid3_user-text2">
+                                <h4>October 18, 2021</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid3_item">                        
+                    <img src="./png/grid3pic_1.png" alt="grid pic">
+                    <div class="grid3_text">
+                        <h4>3 climbing accessories for the climber that has everything</h4>
+                    </div>
+                    <div class="grid3_user">
+                        <img src="./png/user1.png" alt="">
+                        <div class="grid3_user-texts">
+                            <div class="grid3_user-text1">
+                                <h2>Alex Jenna</h2>
+                                <h4>QA</h4>
+                            </div>
+                            <div class="grid3_user-text2">
+                                <h4>October 18, 2021</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid3_item">                        
+                    <img src="./png/grid3pic_2.png" alt="grid pic">
+                    <div class="grid3_text">
+                        <h4>Biking accessories for the beaten path</h4>
+                    </div>
+                    <div class="grid3_user">
+                        <img src="./png/user2.png" alt="">
+                        <div class="grid3_user-texts">
+                            <div class="grid3_user-text1">
+                                <h2>Alex Jenna</h2>
+                                <h4>QA</h4>
+                            </div>
+                            <div class="grid3_user-text2">
+                                <h4>October 18, 2021</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="grid3_item">                        
                     <img src="./png/grid3pic_1.png" alt="grid pic">
                     <div class="grid3_text">
@@ -266,7 +354,7 @@
                     </div>
                     <div class="footer__nav-text">
                         <h2>company</h2>
-                        <h4>About us</h4>
+                        <h4 >About us</h4>
                         <h4>Our team</h4>
                         <h4>Contact</h4>
                         <h4>Terms & Conditions</h4>
@@ -301,6 +389,23 @@
             </div>
         </div>
     </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur iste mollitia nulla facere ut quos dolorem voluptas alias vitae!
+            </p>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+    <div id="up">
+        <span>></span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/buttonUp.js"></script>
 </body>
 </html>
