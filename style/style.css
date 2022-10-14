@@ -71,6 +71,7 @@ h2{
     border: none;
     background-color: transparent;
     padding: 0;
+    z-index: 2;
 }
 
 .button__arrow:hover{
@@ -172,6 +173,7 @@ h2{
     position: absolute;
     transform: translate(-50%, -50%);
     max-width: 100%;
+    z-index: -3;
 }
 
 .round-1{
@@ -931,6 +933,16 @@ justify-content: center;
 
     .captions{
         left: 60px;
+    }
+
+    .sea-button{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sea-button button:not(:last-of-type){
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
